@@ -95,7 +95,7 @@ abstract class BaseAppCompatActivity<ViewBindingType : ViewBinding> : AppCompatA
      */
     protected fun openActivityForResult(intent: Intent?, requestCode: Int) {
         this.requestCode = requestCode      // Assign to global request code.
-        launchIntent.launch(intent)
+        launchIntent.launch(intent!!)
     }
 
     /**
