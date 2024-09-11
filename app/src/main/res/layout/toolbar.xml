@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimaryBackground"
+    android:elevation="@dimen/toolbar_elevation"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    app:theme="@style/DarkSearchViewTheme">
+
+    <LinearLayout
+        android:id="@+id/llToolbarLeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLeftToolbarTitle"
+            style="@style/StyleSemiBold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/tvToolbarHashtag"
+            style="@style/StyleSemiBold"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryTextGreen" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvToolbarTitle"
+        style="@style/StyleToolbarTitle" />
+
+    <TextView
+        android:id="@+id/tvToolbarActionEnd"
+        style="@style/StyleToolbarTitle"
+        android:layout_gravity="end"
+        android:padding="@dimen/activity_vertical_margin"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivToolbarActionEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="@dimen/activity_vertical_margin"
+        android:visibility="gone" />
+
+</androidx.appcompat.widget.Toolbar>
