@@ -15,4 +15,96 @@
         <item name="android:itemBackground">@color/colorWhite</item>
         <item name="android:windowContentTransitions">true</item>
     </style>
+
+    <!-- SearchView Style for dark theme -->
+    <style name="DarkSearchViewTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="searchIcon">@null</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="android:editTextColor">@color/colorPrimaryTextDarkGreen</item>
+        <item name="android:textColorHint">@color/colorPrimaryTextGreen</item>
+        <item name="queryHint">@string/hint_search</item>
+        <item name="queryBackground">@null</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="StyleRegular" parent="StyleText">
+        <item name="android:fontFamily">@font/font_regular</item>
+    </style>
+
+    <style name="StyleSemiBold" parent="StyleText">
+        <item name="android:fontFamily">@font/font_semi_bold</item>
+    </style>
+
+    <!--<style name="StyleBold" parent="StyleText">-->
+    <!--<item name="android:fontFamily">@font/font_bold</item>-->
+    <!--</style>-->
+
+    <style name="StyleText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <!-- Input EditText Style -->
+    <style name="StyleInputEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/default_edit_text_height</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColorHint">@color/colorDisabledText</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="StyleInputEditTextSemiBold" parent="StyleInputEditText">
+        <item name="android:fontFamily">@font/font_semi_bold</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/default_edit_text_height</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColorHint">@color/colorPrimaryText</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- TextView Styles -->
+    <style name="StyleToolbarTitle" parent="StyleText">
+        <item name="android:fontFamily">@font/font_semi_bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Submit Button Style -->
+    <style name="StyleSubmitButton" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/default_button_height</item>
+        <item name="android:fontFamily">@font/font_semi_bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/drawable_color_primary_green_solid</item>
+    </style>
+
+    <!--Shapeable Image View Style-->
+    <style name="ShapeableRoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/shapeable_image_view_radius</item>
+    </style>
 </resources>

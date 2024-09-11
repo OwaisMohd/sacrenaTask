@@ -1,3 +1,85 @@
 <resources>
     <string name="app_name">SacrenaChat</string>
+
+    <!-- Miscellaneous Strings -->
+    <string name="dialog" translatable="false">dialog</string>
+    <string name="auto_fill_key_name" translatable="false">name</string>
+    <string name="auto_fill_key_password" translatable="false">password</string>
+    <string name="auto_fill_key_phone" translatable="false">phone</string>
+    <string name="auto_fill_key_dob" translatable="false">dob</string>
+    <string name="firestore_conversation_key" translatable="false">conversations</string>
+    <string name="date_picker">Date Picker</string>
+
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="action_okay">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_internet">Please check your internet connection.</string>
+    <string name="retrofit_failure">There might be some problem please try again later.</string>
+    <string name="hint_search">Search…</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="storage_permission_needed">You need to grant read/write external         storage permission in order to access media.</string>
+    <string name="camera_permission_needed">You need to allow camera permission
+        in order to capture photos.</string>
+    <string name="contacts_permission_needed">You need to grant read contacts permission in order to Sync all your contacts.</string>
+    <string name="record_audio_permission_needed">You need to allow record audio permission
+        in order to record dialogs.</string>
+    <string name="enable_storage_permission">You should enable your storage permission         in the settings for better experience.</string>
+    <string name="enable_read_contacts_permission">You should enable your read contacts permission         in the settings for better experience.</string>
+    <string name="no_more_data">No more data found.</string>
+    <string name="location_permission_needed">You need to grant location permission in order to get your present location</string>
+    <string name="launch_activity" translatable="false">Launch Activity</string>
+    <string name="take_video">Take Video</string>
+    <string name="take_still_photo">Take Photo</string>
+    <string name="open_image_gallery">Image Gallery</string>
+    <string name="open_video_gallery">Video Gallery</string>
+
+    <!--country code dialog fragment-->
+    <string name="select_country_code">Code</string>
+    <string name="select_country">Country</string>
+    <string name="fragment_title_country_code">Select Country Code</string>
+    <string name="empty_country_code">Please Select country code.</string>
+    <string name="empty_phone_no">Please enter your phone number.</string>
+    <string name="empty_otp">Please enter OTP code.</string>
+
+    <!--Change password dialogFragment-->
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="empty_old_password">Please enter your old password.</string>
+    <string name="empty_new_password">Please enter your new password.</string>
+    <string name="invalid_new_password">Your new password should contain 6–15 characters.</string>
+    <string name="password_not_matched">Your password didn\'t match.</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+
+    <!--Common Checks Strings-->
+    <string name="invalid_mobile_error">Please enter your Mobile Number.</string>
+    <string name="invalid_password_error">Please make sure the password is valid.</string>
+    <string name="empty_field_error">This field cannot be empty.</string>
+    <string name="invalid_email_error">Please enter a valid Email.</string>
+    <string name="invalid_email_mobile_error">Please enter a valid Email or Mobile Number.</string>
+    <string name="terms_not_checked_error">Please check the terms before continuing.</string>
+    <string name="sign_up_password_error">Please enter a valid password containing 6–15 characters.</string>
+    <string name="try_again_later_error">Please try again later.</string>
+    <string name="password_match_error">The Password entered must match the Confirm Password entered.</string>
+    <string name="no_data_to_show">No Results Found.</string>
+    <string name="data_update_success">Updated Successfully.</string>
+    <string name="add_success">Added Successfully.</string>
+    <string name="select_label">Select</string>
+    <string name="delete_success">Deleted Successfully</string>
+    <string name="grant_permissions_error">You need to grant the permission to continue.</string>
+    <string name="improper_dates_error">The selected dates should be in proper order before continuing.</string>
+    <string name="gender_selection_error">Please select a gender before continuing.</string>
+    <string name="dob_selection_error">Please select a DOB before continuing.</string>
+    <string name="empty_location_error">Please pick a location before continuing.</string>
+    <string name="dd_mm_yyyy">DD - MM - YYYY</string>
+    <string name="type_here_hint">Type here…</string>
+
+    <!-- Messages Fragment -->
+
+
 </resources>
