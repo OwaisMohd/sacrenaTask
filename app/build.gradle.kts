@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.sacrenachat"
-        minSdk = 24
+        minSdk = 21
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -40,7 +40,27 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         viewBinding = true
+    }
+    signingConfigs {
+        // Saves the time at which the build was made.
+        buildTypes {
+            debug {
+                buildConfigField(
+                    "String",
+                    "BUILD_TIME",
+                    "\"" + System.currentTimeMillis().toString() + "\""
+                )
+            }
+            release {
+                buildConfigField(
+                    "String",
+                    "BUILD_TIME",
+                    "\"" + System.currentTimeMillis().toString() + "\""
+                )
+            }
+        }
     }
 }
 
@@ -67,6 +87,23 @@ dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.lifecycle:lifecycle-common-java8:2.3.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation("com.squareup.moshi:moshi:1.12.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    kapt("com.github.bumptech.glide:compiler:4.12.0")
+//    implementation("com.github.CanHub:Android-Image-Cropper:3.3.5")
+    implementation("com.vanniktech:android-image-cropper:4.6.0")
+
+    implementation("com.afollestad.material-dialogs:core:3.3.0")
+    implementation("com.afollestad.material-dialogs:datetime:3.3.0")
+    implementation("com.afollestad.material-dialogs:bottomsheets:3.3.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.afollestad.assent:core:3.0.0-RC4")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
