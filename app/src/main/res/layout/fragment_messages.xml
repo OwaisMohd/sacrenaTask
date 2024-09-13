@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.sacrenachat.views.utils.SlidingConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBlack80"
     tools:context=".views.fragments.MessagesFragment">
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/tvConnections"
+        style="@style/StyleSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/connections_label"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <io.getstream.chat.android.ui.feature.channels.list.ChannelListView
+        android:id="@+id/channelListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:streamUiForegroundLayoutColor="@color/colorTransparent"
+        app:streamUiBackgroundLayoutColor="@color/colorTransparent"
+        app:streamUiLastMessageDateTextColor="@color/colorTransparent"
+        app:streamUiLastMessageTextColor="@color/colorWhite70"
+        app:streamUiChannelTitleTextColor="@color/colorWhite"
+        app:streamUiChannelListBackgroundColor="@color/colorTransparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        android:layout_marginTop="16dp"
+        app:streamUiChannelsItemSeparatorDrawable="@drawable/stream_ui_divider"
+        app:layout_constraintTop_toBottomOf="@id/tvConnections" />
+
+</com.example.sacrenachat.views.utils.SlidingConstraintLayout>
