@@ -78,8 +78,10 @@
     <string name="empty_location_error">Please pick a location before continuing.</string>
     <string name="dd_mm_yyyy">DD - MM - YYYY</string>
     <string name="type_here_hint">Type here…</string>
+    <string name="connections_label">Connections</string>
 
     <!-- Messages Fragment -->
+    <string name="api_key_chat">3vxjdxs99mz7</string>
 
 
 </resources>

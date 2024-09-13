@@ -107,4 +107,28 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/shapeable_image_view_radius</item>
     </style>
+
+    <!--menu themes -->
+    <style name="MenuOverFlow">
+        <item name="android:src">@drawable/ic_menu</item>
+    </style>
+
+    <style name="myCustomMenuTextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/colorPrimaryTextDarkGreen</item>
+    </style>
+
+    <!--DialogFragment Animations-->
+    <style name="StylePopupMenu">
+        <item name="android:background">@color/colorBlack</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!-- Define a Hidden Text Style to Make Text Transparent -->
+    <style name="HiddenTextStyle" parent="TextAppearance.AppCompat.Caption">
+        <!-- Set text color to transparent -->
+        <item name="android:textColor">#00000000</item>
+        <!-- Optional: Set visibility to gone (if needed) -->
+        <item name="android:visibility">gone</item>
+    </style>
+
 </resources>
