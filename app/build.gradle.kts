@@ -105,6 +105,12 @@ dependencies {
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.afollestad.assent:core:3.0.0-RC4")
 
+    implementation("io.getstream:stream-chat-android-ui-components:6.4.3")
+    implementation("io.getstream:stream-chat-android-offline:6.4.3")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.activity:activity-ktx:1.7.2")
+    implementation("androidx.fragment:fragment-ktx:1.3.6")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
