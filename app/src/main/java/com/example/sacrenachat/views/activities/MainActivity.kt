@@ -3,6 +3,7 @@ package com.example.sacrenachat.views.activities
 import android.content.Intent
 import android.view.LayoutInflater
 import com.example.sacrenachat.databinding.ActivityMainBinding
+import com.example.sacrenachat.views.fragments.MessagesFragment
 
 class MainActivity : BaseAppCompatActivity<ActivityMainBinding>() {
 
@@ -27,5 +28,7 @@ class MainActivity : BaseAppCompatActivity<ActivityMainBinding>() {
             finish()
             return
         }
+
+        performTransaction(MessagesFragment(), MessagesFragment.TAG)
     }
 }
