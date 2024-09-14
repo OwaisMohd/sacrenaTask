@@ -82,6 +82,7 @@
 
     <!-- Messages Fragment -->
     <string name="api_key_chat">3vxjdxs99mz7</string>
+    <string name="hint_message_label">Message</string>
 
 
 </resources>

@@ -29,10 +29,12 @@
     <color name="colorBlack50">#80000000</color>
     <color name="colorBlack60">#99000000</color>
     <color name="colorBlack80">#cc000000</color>
+    <color name="colorBlack90">#E6000000</color>
     <color name="colorBlack05">#0D000000</color>
     <color name="colorGradientSignInStart">#3393AB</color>
     <color name="colorGradientSignInEnd">#127091</color>
     <color name="colorGradientSignUpStart">#33D4CF</color>
     <color name="colorGradientSignUpEnd">#37A2AF</color>
     <color name="colorNeon">#d3fb63</color>
+    <color name="colorNeonDark">#98c93d</color>
 </resources>
