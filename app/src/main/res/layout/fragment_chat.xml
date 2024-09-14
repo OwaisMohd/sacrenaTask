@@ -10,7 +10,15 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:streamUiMessageListHeaderShowBackButtonBadge="false"
+        app:streamUiMessageListHeaderShowUserAvatar="false"
+        app:streamUiMessageListHeaderBackground="@color/colorBlack80"
+        app:streamUiMessageListHeaderBackButtonIcon="@drawable/ic_toolbar_back_btn_white"
+        app:streamUiMessageListHeaderDefaultLabelTextColor="@color/colorTransparent"
+        app:streamUiMessageListHeaderOfflineLabelTextColor="@color/colorWhite"
+        app:streamUiMessageListHeaderSearchingForNetworkLabelColor="@color/colorWhite"
+        app:streamUiMessageListHeaderTitleTextColor="@color/colorWhite" />
 
     <io.getstream.chat.android.ui.feature.messages.list.MessageListView
         android:id="@+id/messageListView"
@@ -19,14 +27,38 @@
         app:layout_constraintBottom_toTopOf="@+id/messageComposerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/messageListHeaderView" />
+        app:layout_constraintTop_toBottomOf="@+id/messageListHeaderView"
+        app:streamUiMessageTextColorTheirs="@color/colorBlack"
+        app:streamUiMessageBackgroundColorTheirs="@color/colorWhite"
+        app:streamUiMessageTextColorMine="@color/colorBlack"
+        app:streamUiBlockUserOptionEnabled="false"
+        app:streamUiMarkAsUnreadEnabled="false"
+        app:streamUiMessageBackgroundColorMine="@color/colorNeon"
+        app:streamUiMessageTextColorDateSeparator="@color/colorBlack80"
+        app:streamUiDateSeparatorBackgroundColor="@color/colorGrayBg"
+        app:streamUiBackgroundColor="@color/colorBlack"
+        app:streamUiShowReactionsForUnsentMessages="false" />
 
     <io.getstream.chat.android.ui.feature.messages.composer.MessageComposerView
         android:id="@+id/messageComposerView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:streamUiMessageComposerMessageInputHintText="@string/hint_message_label"
+        app:streamUiMessageComposerAttachmentsPickerCameraAttachmentsTabEnabled="true"
+        app:streamUiMessageComposerAttachmentsPickerFileAttachmentsTabEnabled="false"
+        app:streamUiMessageComposerAttachmentsPickerMediaAttachmentsTabEnabled="false"
+        app:streamUiMessageComposerAttachmentsPickerVideoIconVisible="false"
+        app:streamUiMessageComposerAudioRecordingButtonEnabled="false"
+        app:streamUiMessageComposerAudioRecordingButtonVisible="false"
+        app:streamUiMessageComposerCommandsButtonVisible="false"
+        app:streamUiMessageComposerCommandsHandlingEnabled="false"
+        app:streamUiMessageComposerMentionsHandlingEnabled="false"
+        app:streamUiMessageComposerMessageInputTextColor="@color/colorWhite"
+        app:streamUiMessageComposerSendMessageButtonEnabled="true"
+        app:streamUiMessageComposerSendMessageButtonIconTintList="@color/color_send_button_selector" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
